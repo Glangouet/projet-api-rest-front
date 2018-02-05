@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>GUI Utilisateurs</title>
+    <script type="text/javascript" src="resources/js_app/ajax.js" ></script>
+    <script type="text/javascript" src="resources/js_app/user.class.js" ></script>
+    <script type="text/javascript" src="resources/js_app/user-ws.js" ></script>
+    <script type="text/javascript" src="resources/js_app/buttons.js" ></script>
+</head>
+<body>
+<div>
+    Username:<br/>
+    <input type="text" id="username" ><br/>
+    <br/>
+    First name:<br/>
+    <input type="text" id="firstName" ><br/>
+    Last name:
+    <br/>
+    <input type="text" id="lastName" ><br/>
+    Age:
+    <br/>
+    <input type="number" id="age" min="1" >
+    <br/><br/>
+    <button onClick="doCreateUser();">Créer un utilisateur</button>
+    <button onClick="doUpdateUser();">Modifier un utilisateur</button>
+    <hr>
+    <button onClick="doGetUser();">Afficher un utilisateur</button>
+    <input type="text" id="id" placeholder="user id" >
+    <button onClick="doDeleteUser();">Effacer un utilisateur</button>
+    <br/><br/>
+    <button onClick="doGetUsers();">Afficher tous les utilisateurs</button>
+</div>
+<div id="show">
+</div>
+</body>
+</html>
